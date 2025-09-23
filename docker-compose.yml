@@ -13,6 +13,8 @@ services:
     restart: unless-stopped
     networks:
       - discord-mcp-network
+    ports:
+      - "8080:8080"
     # Ensure proper signal handling for stdio transport
     init: true
     # Add health check to monitor container status
