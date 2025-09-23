@@ -1,6 +1,7 @@
-# Smithery.ai configuration
+# Smithery configuration file: https://smithery.ai/docs/build/project-config/smithery.yaml
+version: 1
 startCommand:
-  type: stdio
+  type: http
   configSchema:
     type: object
     required:
@@ -8,10 +9,9 @@ startCommand:
     properties:
       discordToken:
         type: string
-        description: The bot token for Discord integration.
-      discordGuildId:
-        type: string
-        description: Optional default Discord server ID.
-  commandFunction:
-    |-
-    config => ({command: 'node', args: ['./dist/index.js'], env: {DISCORD_TOKEN: config.discordToken, DISCORD_GUILD_ID: config.discordGuildId}})
+        title: "Discord Bot Token"
+        description: "Discord bot token. Obtain this from the Discord Developer Portal."
+  exampleConfig:
+    discordToken: YOUR_DISCORD_BOT_TOKEN
+build:
+  dockerfile: Dockerfile
