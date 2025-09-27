@@ -1,5 +1,7 @@
 # Discord MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@xcloudx123456/discord-mcp)](https://smithery.ai/server/@xcloudx123456/discord-mcp)
+
 Model Context Protocol (MCP) server for Discord API integration.
 
 ## Prerequisites
@@ -64,3 +66,14 @@ Other optional variables:
 - `RATE_LIMIT_PROTECTION`: Enable/disable rate limit protection (default: true)
 - `ALLOWED_ACTIONS`: Comma-separated list of allowed actions (optional)
 - `DENIED_ACTIONS`: Comma-separated list of denied actions (optional)
+
+
+## Installation
+
+### Installing via Smithery
+
+To install Discord MCP Server automatically via [Smithery](https://smithery.ai/server/@xcloudx123456/discord-mcp):
+
+```bash
+npx -y @smithery/cli install @xcloudx123456/discord-mcp
+```
